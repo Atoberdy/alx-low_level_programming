@@ -1,45 +1,28 @@
-#ifndef MAIN_H
+#include "main.h"
 
-#define MAIN_H
-
-#include <stdio.h>
 
 /**
-
- *void prototypes()
-
- *int prototypes()
-
- *char prototypes()
-
+ *_strcat - concatinate 2 strings.
+ *@dest: first string.
+ *@src: second string.
+ *Return: string.
  */
 
-void reverse_array(int *a, int n);
+char *_strcat(char *dest, char *src)
+{
+	int i = 0, j = 0;
 
-void print_number(int n);
+	while (dest[i] != '\0')
+		i++;
 
-void print_buffer(char *b, int size);
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
 
-int _strcmp(char *s1, char *s2);
+	dest[i] = '\0';
 
-char *_strcat(char *dest, char *src);
-
-char *_strncat(char *dest, char *src, int n);
-
-char *_strncpy(char *dest, char *src, int n);
-
-char *string_toupper(char *);
-
-char *cap_string(char *);
-
-char *leet(char *);
-
-char *rot13(char *);
-
-char *infinite_add(char *n1, char *n2, char *r, int size_r);
-
-char *add_strings(char *n1, char *n2, char *r, int r_index);
-
-
-
-#endif /*MAIN_H*/
+	return (dest);
+}
