@@ -1,19 +1,7 @@
-0-memset.c	Fills memory with a constant byte
-
-1-memcpy.c	Copies memory area
-
-2-strchr.c	Locates a character in a string
-
-3-strspn.c	Gets the length of a prefix substring
-
-4-strpbrk.c	Searches a string for any of a set of bytes
-
-5-strstr.c	Locates a substring
-
-7-print_chessboard.c	Prints the chessboard
-
-8-print_diagsums.c	Prints the sum of the two diagonals of a square matrix of integers
-
-9-set_string.c	Sets the value of a pointer to a char
-
-101-crackme_password.c	Contains the password for the crackme2 executable
+0-print_list.c	Prints all the elements of a list_t list
+1-list_len.c	Returns the number of elements in a linked list_t list
+2-add_node.c	Adds a new node at the beginning of a list_t list
+3-add_node_end.c	Adds a new node at the end of a list_t list
+4-free_list.c	Frees a list_t list
+100-first.c	Prints a message before main function is executed
+101-hello_holberton.asm	Assembly code that prints Hello, Holberton only using printf function
